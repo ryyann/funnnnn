@@ -2,13 +2,22 @@ footer {
 	height: 8rem;
 	width: 100%;
 	background: #448bff;
+	position: relative;
 }
 .social {
-	display: flex;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+	height: 1.75rem;
+	width: 17rem;
 	.icon {
+		margin-right: 3rem;
 		width: 1.75rem;
 		height: 1.75rem;
 		fill: white;
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
 

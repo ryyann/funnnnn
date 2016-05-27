@@ -1,5 +1,11 @@
 ```bash
-$ Install
+# To install
+$ npm install -g webpack gulp
+$ npm install
+
+# To start server at http://localhost:3000
+$ gulp
+```
 
 
 

@@ -39,3 +39,9 @@
  		background-repeat: no-repeat;
  	}
 }
+
+@media (max-width: 600px) {
+	.hero .satellite {
+		height: 35vh;
+	}
+}

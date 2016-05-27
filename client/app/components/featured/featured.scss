@@ -24,6 +24,8 @@ featured {
 		width: 100%;
 	}
 	a {
+		display: block;
+		margin-top: 1em;
 		color: #4285f4;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -44,5 +46,22 @@ featured {
 	}
 	&:last-child {
 		margin-left: 0.7rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.featured-items {
+		flex-direction: column;
+	}
+	featured {
+		width: 100%;
+		margin-bottom: 0.7rem;
+		&:first-child, &:last-child {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }

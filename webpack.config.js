@@ -14,7 +14,7 @@ module.exports = {
        { test: /\.styl$/, loader: 'style!css!postcss!stylus' },
        { test: /\.css$/, loader: 'style!css!postcss' },
        { test: /\.scss$/, loader: 'style!css!postcss!sass' },
-       { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'file?limit=10000!img?progressive=true'}
+       { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'file?limit=10000!img?progressive=true'},
     ]
   },
   plugins: [

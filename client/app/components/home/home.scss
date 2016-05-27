@@ -1,3 +1,19 @@
 main {
-	padding: 2.7rem 0.7rem;
+	header {
+		padding: 2rem 0 1.5rem 0;
+		img {
+			display: block;
+			width: 22.125rem;
+			margin: 0 auto;
+		}
+	}
+	.featured-items {
+		padding: 0 0.7rem;
+	}
+}
+
+@media (max-width: 600px) {
+	main .featured-items {
+		padding: 0;
+	}
 }

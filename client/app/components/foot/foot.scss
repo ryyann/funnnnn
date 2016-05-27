@@ -1,0 +1,19 @@
+footer {
+	height: 8rem;
+	width: 100%;
+	background: #448bff;
+}
+.social {
+	display: flex;
+	.icon {
+		width: 1.75rem;
+		height: 1.75rem;
+		fill: white;
+	}
+}
+
+@media (max-width: 600px) {
+	footer {
+		height: 4.625rem;
+	}
+}

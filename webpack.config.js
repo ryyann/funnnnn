@@ -1,6 +1,8 @@
 var path    = require('path');
 var webpack = require('webpack');
+var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
   devtool: 'sourcemap',
@@ -9,9 +11,10 @@ module.exports = {
     loaders: [
        { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
        { test: /\.html$/, loader: 'raw' },
-       { test: /\.styl$/, loader: 'style!css!stylus' },
-       { test: /\.css$/, loader: 'style!css' },
-       { test: /\.scss$/, loader: 'style!css!sass' }
+       { test: /\.styl$/, loader: 'style!css!postcss!stylus' },
+       { test: /\.css$/, loader: 'style!css!postcss' },
+       { test: /\.scss$/, loader: 'style!css!postcss!sass' },
+       { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'file?limit=10000!img?progressive=true'}
     ]
   },
   plugins: [
@@ -32,5 +35,10 @@ module.exports = {
         return module.resource && module.resource.indexOf(path.resolve(__dirname, 'client')) === -1;
       }
     })
-  ]
+  ],
+  postcss: function () {
+    return [autoprefixer, require('postcss-font-magician')({
+      hosted: './client/assets/fonts'
+    })]
+  }
 };

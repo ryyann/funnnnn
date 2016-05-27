@@ -1,6 +1,8 @@
+import logoSrc from '../../../assets/glogo.png'
+
 class NavbarController {
   constructor() {
-    this.name = 'navbar';
+    this.logoSrc = logoSrc;
   }
 }
 

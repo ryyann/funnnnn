@@ -1,0 +1,19 @@
+.play-button {
+	background: transparent;
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0;
+	border: 0;
+	opacity: 0.67;
+	transition: 0.2s;
+	outline: none;
+	&:hover {
+		opacity: 1;
+	}
+}

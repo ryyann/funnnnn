@@ -1,0 +1,48 @@
+.featured-items {
+	display: flex;
+	flex-direction: row;
+}
+featured {
+	width: 33.33%;
+	height: auto;
+	position: relative;
+	.blurb {
+		position: absolute;
+		left: 15%;
+		bottom: 10%;
+		font-size: 1rem;
+		font-family: 'Roboto Slab';
+		font-weight: 300;
+		color: white;
+		-webkit-font-smoothing: antialiased;
+	}
+	h2 {
+		margin: 0;
+		font-weight: 300;
+	}
+	img {
+		width: 100%;
+	}
+	a {
+		color: #4285f4;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: 'Roboto';
+		font-weight: 500;
+		img {
+			display: inline-block;
+			margin-left: 0.5em;
+			margin-top: -0.1em;
+			width: 1em;
+			height: 1em;
+			line-height: 1em;
+			vertical-align: middle;
+		}
+	}
+	&:first-child {
+		margin-right: 0.7rem;
+	}
+	&:last-child {
+		margin-left: 0.7rem;
+	}
+}

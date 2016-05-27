@@ -2,7 +2,6 @@
 
 .hero {
   background-color: $bgColor;
-  height: 50rem;
   .intro {
   	box-sizing: border-box;
   	padding: 2em 0;
@@ -31,6 +30,7 @@
   	background: #000;
   }
  	.satellite {
+ 		position: relative;
  		width: 100%;
  		height: 56.75vw;
  		background-image: url('../../../assets/satellite-of-love.jpg');
